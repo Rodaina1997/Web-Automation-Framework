@@ -1,0 +1,39 @@
+# IDEs and system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Java build output
+target/
+*.class
+
+# Build tools
+.gradle/
+build/
+
+# Dependency folders
+.mvn/
+node_modules/
+
+# Docker files (optional if already in context)
+.dockerignore
+
+# Secrets and env files
+.env
+*.pem
+*.key
+*.crt
+*.cert
+
+# Swap/backup files
+*.swp
+*.swo
