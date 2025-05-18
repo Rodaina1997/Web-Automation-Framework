@@ -10,9 +10,13 @@ public class CartPage extends PageBase{
         super(driver);
     }
 
-    @FindBy(css="a.checkout-button.button.alt.wc-forward")
-    public WebElement checkoutBtn;
 
-    @FindBy(linkText = "Thinking in HTML")
-    public WebElement cartItem;
+    public WebElement getCheckoutButton() {
+        return driver.findElement(By.cssSelector("a.checkout-button.button.alt.wc-forward"));
+    }
+
+
+    public WebElement getCartItem() {
+        return driver.findElement(By.linkText("Thinking in HTML"));
+    }
 }
