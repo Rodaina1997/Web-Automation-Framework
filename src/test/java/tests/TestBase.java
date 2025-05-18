@@ -18,14 +18,12 @@ public class TestBase {
     @BeforeClass
     public void setup(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
-            //WebDriver.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
-            //WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
         //driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://practice.automationtesting.in/");
     }
 
