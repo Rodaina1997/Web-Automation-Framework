@@ -10,6 +10,8 @@ public class PageBase {
 
     public PageBase(WebDriver driver){
         PageFactory.initElements(driver,this);
+        this.driver=driver;
+
     }
 
 }
