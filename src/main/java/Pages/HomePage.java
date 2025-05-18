@@ -23,11 +23,13 @@ public class HomePage extends PageBase{
     @FindBy(xpath="//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[1]/span[2]/ins/span")
     public WebElement bookPrice;
 
-    @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[2]")
-    public WebElement addToBasketBtn;
 
-    @FindBy(xpath = "//*[@id=\"wpmenucartli\"]")
-    public WebElement cartBtn;
+    public WebElement getAddToBasketBtn() {
+        return driver.findElement(By.xpath("//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[2]"));
+    }
 
+    public WebElement getCartButton() {
 
+        return driver.findElement(By.xpath("//*[@id=\"wpmenucartli\"]"));
+    }
 }
