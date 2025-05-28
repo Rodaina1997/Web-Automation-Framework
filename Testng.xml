@@ -1,18 +1,18 @@
 <suite name="AllTestSuite" parallel="tests" thread-count="2">
 
 
-    <test name="ChromeTests">
+<!--     <test name="ChromeTests">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.UserTests"/>
         </classes>
-    </test>
+    </test> -->
 
-<!--     <test name="FirefoxTests">
+    <test name="FirefoxTests">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.UserTests"/>
         </classes>
-    </test> -->
+    </test>
 
 </suite>
